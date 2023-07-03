@@ -1,5 +1,9 @@
 function findTopNames(students) {
-  /* Your code here */
+  const TopNames = students
+  .filter(students => students.score > 8)
+  .map(students => students.name);
+
+  return TopNames;
 }
 
 const students1 = [
